@@ -27,8 +27,102 @@ Color Scheme:
 
 Pastel Color Scheme:
 Hex Codes: #BEFCFF | #DEFFFA | #FFDAF5 | #B0E1FF | #E6C6FF.
+
+Current progress = 10:55
 */
 
+@import url("https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Emilys Candy", cursive;
+}
+
 body {
-  background: linear-gradient(145deg, #ffb3f2, #ffde75);
+  overflow-x: hidden;
+  min-height: 100vh;
+  background: linear-gradient(#10288a, #0d6fb0);
+}
+
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header .Logo {
+  color: #fbf7ff;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+#header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+#header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #fbf7ff;
+  border-radius: 20px;
+}
+
+#header ul li a:hover,
+#header ul li a.active {
+  background: #fbf7ff;
+  color: #10288a;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section #text {
+  position: absolute;
+  color: #fbf7ff;
+  font-size: 10vw;
+  text-align: center;
+  line-height: 0.55em;
+  transform: translateY(-50%);
+}
+
+section #text span {
+  font-size: 0.2em;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+#btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 30px;
+  background: #fbf7ff;
+  color: #10288a;
+  font-size: 1.2em;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border-radius: 40px;
+  transform: translateY(100px);
 }
