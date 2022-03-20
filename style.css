@@ -13,3 +13,22 @@ and
 
 https://codepen.io/nicecue/pen/gOpppqE
 */
+
+/* 
+Color Scheme:
+
+#FFB3F2
+#FFB0D8
+#FFB6B4
+#FFC690
+#FFDE75
+#F9F871
+
+
+Pastel Color Scheme:
+Hex Codes: #BEFCFF | #DEFFFA | #FFDAF5 | #B0E1FF | #E6C6FF.
+*/
+
+body {
+  background: linear-gradient(145deg, #ffb3f2, #ffde75);
+}
