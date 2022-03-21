@@ -18,13 +18,13 @@
       </ul>
     </header>
     <section>
-      <h2 id="text"><span>Computer Science Student</span><br />Aly Anderson</h2>
       <img src="images/stars.png" id="stars" />
+      <h2 id="text"><span>Computer Science Student</span><br />Aly Anderson</h2>
       <!-- <img src="images/cloud1.png" id="clouds1" /> -->
       <img src="images/cloud2.png" id="clouds2" />
       <img src="images/cloud3.png" id="clouds3" />
-      <img src="images/ocean.png" id="ocean" />
       <img src="images/moonnight.png" id="moon" />
+      <img src="images/ocean.png" id="ocean" />
       <a href="#" id="btn">Explore</a>
       <img src="images/rocks.png" id="rocks" />
     </section>
@@ -303,5 +303,26 @@
         esse eum nulla illo dignissimos deserunt dolores.
       </p>
     </div>
+
+    <script>
+      let text = document.getElementById("text");
+      let clouds2 = document.getElementById("clouds2");
+      let clouds3 = document.getElementById("clouds3");
+      let btn = document.getElementById("btn");
+      let rocks = document.getElementById("rocks");
+      let ocean = document.getElementById("ocean");
+      let moon = document.getElementById("moon");
+      let stars = document.getElementById("stars");
+      let header = document.getElementById("header");
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + "px";
+        // text.style.bottom = value * -0.05 + "px";
+        clouds2.style.left = value * 2 + "px";
+        clouds3.style.left = value * -1.5 + "px";
+        moon.style.top = value * 0.05 + "px";
+      });
+    </script>
   </body>
 </html>
