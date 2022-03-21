@@ -28,7 +28,7 @@ Color Scheme:
 Pastel Color Scheme:
 Hex Codes: #BEFCFF | #DEFFFA | #FFDAF5 | #B0E1FF | #E6C6FF.
 
-Current progress = 13:22
+Current progress = 14:15
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap");
@@ -56,6 +56,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 10000;
 }
 
 #header .Logo {
@@ -103,18 +104,26 @@ section img {
   position: absolute;
   top: 0;
   left: 0;
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   pointer-events: none;
 }
 
+section img#moon {
+  mix-blend-mode: screen;
+}
+
+section img#ocean {
+  mix-blend-mode: screen;
+}
+
 section #text {
   position: absolute;
   color: #fbf7ff;
-  font-size: 10vw;
+  font-size: 5vw;
   text-align: center;
-  line-height: 0.55em;
+  line-height: 0.6em;
   transform: translateY(-50%);
 }
 
