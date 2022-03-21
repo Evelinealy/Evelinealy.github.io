@@ -12,7 +12,7 @@
 body {
   overflow-x: hidden;
   min-height: 100vh;
-  background: linear-gradient(#10288a, #0d6fb0);
+  background: linear-gradient(#10288a, #0d6fb0, #fbf7ff, #fbf7ff);
 }
 
 #header {
@@ -75,7 +75,7 @@ section::before {
   left: 0;
   width: 100%;
   height: 100px;
-  background: linear-gradient(to top, #1451ba, transparent);
+  background: linear-gradient(to top, #000338, transparent);
   z-index: 10;
 }
 
@@ -94,7 +94,7 @@ section img#moon {
 }
 
 section img#ocean {
-  mix-blend-mode: screen;
+  /* mix-blend-mode: screen; */
 }
 
 section #text {
@@ -128,7 +128,7 @@ section #text span {
 .sec {
   position: relative;
   padding: 100px;
-  background: #1451ba;
+  background: #000338;
 }
 
 .sec h2 {
@@ -140,4 +140,39 @@ section #text span {
 .sec p {
   font-size: 1em;
   color: #fbf7ff;
+}
+
+.contact-me {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  padding: 100px;
+  background: #000338;
+}
+
+.contact-me h2 {
+  font-size: 3.5em;
+  color: #fbf7ff;
+  margin-bottom: 10px;
+}
+
+.contact-me img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.contact-me img#underwater {
+  mix-blend-mode: screen;
+}
+
+.contact-me img#seafloor {
+  mix-blend-mode: screen;
 }

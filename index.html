@@ -9,7 +9,7 @@
   </head>
   <body>
     <header id="header">
-      <a href="#" class="Logo">Logo</a>
+      <a href="https://github.com/AlyGA" class="Logo" target="_blank">AlyGA</a>
       <ul>
         <li><a href="#" class="active">Home</a></li>
         <li><a href="#">About</a></li>
@@ -18,15 +18,15 @@
       </ul>
     </header>
     <section>
-      <img src="images/stars.png" id="stars" />
+      <img src="images/stars2.png" id="stars" />
       <h2 id="text"><span>Computer Science Student</span><br />Aly Anderson</h2>
       <!-- <img src="images/cloud1.png" id="clouds1" /> -->
-      <img src="images/cloud2.png" id="clouds2" />
-      <img src="images/cloud3.png" id="clouds3" />
-      <img src="images/moonnight.png" id="moon" />
-      <img src="images/ocean.png" id="ocean" />
+      <img src="images/cloud2-1.png" id="clouds2" />
+      <img src="images/cloud3-1.png" id="clouds3" />
+      <img src="images/moon2.png" id="moon" />
+      <img src="images/ocean3.png" id="ocean" />
       <a href="#" id="btn">Explore</a>
-      <img src="images/rocks.png" id="rocks" />
+      <img src="images/rocks2.png" id="rocks" />
     </section>
     <div class="sec">
       <h2>About Me</h2>
@@ -303,6 +303,13 @@
         esse eum nulla illo dignissimos deserunt dolores.
       </p>
     </div>
+    <div class="contact-me">
+      <h2>Conact Me</h2>
+      <img src="images/waterlight.png" id="underwater" alt="" />
+      <img src="images/seafloor.png" id="seafloor" alt="" />
+      <img src="images/underwaterrocks1.png" id="underwaterrocks" alt="" />
+    </div>
+    <footer class="footer"></footer>
 
     <script>
       let text = document.getElementById("text");
@@ -318,7 +325,7 @@
       window.addEventListener("scroll", function () {
         let value = window.scrollY;
         stars.style.left = value * 0.25 + "px";
-        // text.style.bottom = value * -0.05 + "px";
+        // text.style.bottom = 50 + value * -1.25 + "px";
         clouds2.style.left = value * 2 + "px";
         clouds3.style.left = value * -1.5 + "px";
         moon.style.top = value * 0.05 + "px";
