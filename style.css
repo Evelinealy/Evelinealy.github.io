@@ -128,7 +128,7 @@ section #text span {
 .sec {
   position: relative;
   padding: 100px;
-  background: #000338;
+  background: linear-gradient(#000338, #420a87);
 }
 
 .sec h2 {
@@ -150,7 +150,7 @@ section #text span {
   /* justify-content: center;
   align-items: center; */
   padding: 100px;
-  background: #000338;
+  background: linear-gradient(#420a87, #2351e4);
 }
 
 .contact-me h2 {
