@@ -25,7 +25,7 @@
       <img src="images/cloud3-1.png" id="clouds3" />
       <img src="images/moon2.png" id="moon" />
       <img src="images/ocean3.png" id="ocean" />
-      <a href="#" id="btn">Explore</a>
+      <!-- <a href="#" id="btn">Explore</a> -->
       <img src="images/rocks2.png" id="rocks" />
     </section>
     <div class="sec">
@@ -305,6 +305,7 @@
     </div>
     <div class="contact-me">
       <h2>Conact Me</h2>
+      <img src="images/sparkles.png" id="sparkles" alt="" />
       <img src="images/waterlight.png" id="underwater" alt="" />
       <img src="images/seafloor.png" id="seafloor" alt="" />
       <img src="images/underwaterrocks2.png" id="underwaterrocks" alt="" />
@@ -326,12 +327,28 @@
 
       window.addEventListener("scroll", function () {
         let value = window.scrollY;
+        // text.style.top = 50 + value * 0.5 + "%";
         stars.style.left = value * 0.25 + "px";
-        // text.style.bottom = 50 + value * -1.25 + "px";
         clouds2.style.left = value * 2 + "px";
         clouds3.style.left = value * -1.5 + "px";
-        moon.style.top = value * 0.05 + "px";
+        moon.style.top = value * 0.1 + "px";
       });
+
+      function createBubble() {
+        const section = document.querySelector(".sec");
+        const createElement = document.createElement("span");
+        let size = Math.random() * 60;
+
+        createElement.style.width = 20 + size + "px";
+        createElement.style.height = 20 + size + "px";
+        createElement.style.left = Math.random() * innerWidth + "px";
+        section.appendChild(createElement);
+        setTimeout(() => {
+          createElement.remove();
+        }, 4000);
+      }
+
+      setInterval(createBubble, 50);
     </script>
   </body>
 </html>
