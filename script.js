@@ -19,18 +19,19 @@ window.addEventListener("scroll", function () {
   moon.style.top = value * 0.1 + "px";
 });
 
-function createBubble() {
-  const section = document.querySelector(".sec");
-  const createElement = document.createElement("span");
-  let size = Math.random() * 60;
+// Create bubbles
+// function createBubble() {
+//   const section = document.querySelector(".sec");
+//   const createElement = document.createElement("span");
+//   let size = Math.random() * 60;
 
-  createElement.style.width = 20 + size + "px";
-  createElement.style.height = 20 + size + "px";
-  createElement.style.left = Math.random() * innerWidth + "px";
-  section.appendChild(createElement);
-  setTimeout(() => {
-    createElement.remove();
-  }, 4000);
-}
+//   createElement.style.width = 20 + size + "px";
+//   createElement.style.height = 20 + size + "px";
+//   createElement.style.left = Math.random() * innerWidth + "px";
+//   section.appendChild(createElement);
+//   setTimeout(() => {
+//     createElement.remove();
+//   }, 4000);
+// }
 
-setInterval(createBubble, 50);
+// setInterval(createBubble, 50);
