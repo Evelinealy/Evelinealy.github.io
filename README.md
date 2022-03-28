@@ -10,8 +10,8 @@ The table below is the desired features that have yet to be implemented by mysel
 
 | Features                                              |    Status     |
 | ----------------------------------------------------- | :-----------: |
-| Create Glass borders to showcase projects             |  In-Progress  |
-| Implement design so that it appears when scrolling    | Not Completed |
+| Create Glossy-like borders to showcase projects       |   Completed   |
+| Implement design so that it appears when scrolling    |  In-Progress  |
 | Fix bubbles to go through the the section and footer  | Not Completed |
 | Add information on the About Me                       | Not Completed |
 | Add information on the Contact Me                     | Not Completed |
