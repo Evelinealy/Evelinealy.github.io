@@ -135,13 +135,78 @@ section #text span {
   background: linear-gradient(#000338, #420a87);
 }
 
-.sec h2 {
-  font-size: 3.5em;
-  color: #fbf7ff;
-  margin-bottom: 10px;
+.sec .aboutme-box {
+  position: relative;
+  width: 90%;
+  padding: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  color: #000;
 }
 
-.sec p {
+.sec .aboutme-box:before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  filter: blur(2px);
+}
+
+.sec .aboutme-box h2 {
+  position: relative;
+  margin: 0 0 20px;
+  padding: 0;
+  z-index: 2;
+  font-size: 3.5em;
+  color: #fbf7ff;
+}
+
+.sec .aboutme-box p {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  font-size: 1em;
+  color: #fbf7ff;
+}
+
+.sec .projects-box {
+  position: relative;
+  width: 90%;
+  height: 500px;
+  padding: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  color: #000;
+  margin-top: 150px;
+}
+
+.sec .projects-box:before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  filter: blur(2px);
+}
+
+.sec .projects-box h2 {
+  position: relative;
+  margin: 0 0 20px;
+  padding: 0;
+  z-index: 2;
+  font-size: 3.5em;
+  color: #fbf7ff;
+}
+
+.sec .projects-box p {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
   font-size: 1em;
   color: #fbf7ff;
 }
