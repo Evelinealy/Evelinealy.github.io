@@ -1,1 +1,100 @@
-/* Fill with code */
+/* Design Idea:
+
+Butterfly Pattern
+
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Emilys Candy", cursive;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  background: #ffdff0;
+  background-image: url("images/mist.png");
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+}
+
+#header .Logo {
+  color: #403f41;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+#header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+#header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #403f41;
+  border-radius: 20px;
+}
+
+#header ul li a:hover,
+#header ul li a.active {
+  background: #e0deef;
+  color: #403f41;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+section #text {
+  position: absolute;
+  color: #403f41;
+  font-size: 5vw;
+  text-align: center;
+  line-height: 0.7em;
+  transform: translateY(-50%);
+}
+
+section #text span {
+  font-size: 0.2em;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
