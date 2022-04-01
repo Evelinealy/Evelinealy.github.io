@@ -34,7 +34,7 @@ body {
 }
 
 #header .Logo {
-  color: #403f41;
+  color: #000000;
   font-weight: 700;
   font-size: 2em;
   text-decoration: none;
@@ -55,14 +55,14 @@ body {
 #header ul li a {
   text-decoration: none;
   padding: 6px 15px;
-  color: #403f41;
+  color: #000000;
   border-radius: 20px;
 }
 
 #header ul li a:hover,
 #header ul li a.active {
   background: #e0deef;
-  color: #403f41;
+  color: #000000;
 }
 
 section {
@@ -96,7 +96,7 @@ section img {
 
 section #text {
   position: absolute;
-  color: #403f41;
+  color: #000000;
   font-size: 5vw;
   text-align: center;
   line-height: 0.7em;
