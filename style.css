@@ -19,7 +19,6 @@ body {
   overflow-x: hidden;
   min-height: 100vh;
   background: #ffdff0;
-  background-image: url("images/mist.png");
 }
 
 #header {
@@ -67,92 +66,29 @@ body {
 }
 
 section {
+  display: flex;
+  flex-direction: column;
   position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-attachment: fixed;
+  background-image: url("images/mist.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
 }
 
-section img {
-  position: absolute;
-  top: 0;
-  left: -25px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  pointer-events: none;
-}
-
-section #text {
-  position: absolute;
-  color: #000000;
-  font-size: 5vw;
-  text-align: center;
-  line-height: 0.7em;
-  transform: translateY(-50%);
-}
-
-section #text span {
-  font-size: 0.2em;
-  letter-spacing: 2px;
-  font-weight: 400;
-}
-
-#button {
-  text-decoration: none;
+section #opening {
   display: inline-block;
-  padding: 8px 30px;
-  background: #fdb7d4;
-  color: #000000;
-  font-size: 1.2em;
-  font-weight: 500;
-  letter-spacing: 2px;
-  border-radius: 60px;
-  transform: translateY(100px);
+  background-color: white;
+  width: 90%;
+  height: 60vh;
 }
 
-#aboutme {
-  position: relative;
-  width: 100vh;
-  padding: 50px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-}
-
-#aboutme h2 {
-  position: relative;
-  margin: 0 0 20px;
-  padding: 0;
-  z-index: 2;
-}
-
-#aboutme:before {
-  content: "";
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  right: -20px;
-  bottom: -20px;
-  filter: blur(2px);
-}
-
-#aboutme p {
-  position: relative;
-  margin: 0 0 20px;
-  padding: 0;
-  z-index: 2;
-}
-
-#projects {
-  position: relative;
-  padding: 100px;
-}
-#contactme {
-  position: relative;
-  padding: 100px;
+section #about-me {
+  background-color: white;
+  width: 90%;
+  height: 60vh;
 }
