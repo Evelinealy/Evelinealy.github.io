@@ -75,12 +75,41 @@ body {
 }
 
 #intro {
-  display: inline-block;
+  position: relative;
+  display: flex;
   margin: auto;
   margin-top: 6%;
   width: 80%;
   height: 80vh;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background-color: white;
+  background-image: url(images/openimage.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#intro > .intro-button {
+  position: absolute;
+  left: 47.3%;
+  top: 67.6%;
+  width: 5.5%;
+  height: 6%;
+  background: #ffdff0;
+  border: solid #faa1d0;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+#intro > .intro-button:hover {
+  background: #faa1d0;
+  border-radius: 5px;
+}
+
+.intro-button > a {
+  text-decoration: none;
+  color: black;
 }
 
 #about-me {
