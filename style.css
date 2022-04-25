@@ -19,8 +19,10 @@ body {
   overflow-x: hidden;
   min-height: 100vh;
   background: #ffdff0;
+  background-image: url("images/mist.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
 #header {
   position: fixed;
   top: 0;
@@ -64,31 +66,28 @@ body {
   background: #e0deef;
   color: #000000;
 }
-
-section {
+#main {
+  position: relative;
   display: flex;
   flex-direction: column;
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  background-image: url("images/mist.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+  align-self: center;
 }
 
-section #opening {
+#intro {
   display: inline-block;
+  margin: auto;
+  margin-top: 6%;
+  width: 80%;
+  height: 80vh;
   background-color: white;
-  width: 90%;
-  height: 60vh;
 }
 
-section #about-me {
+#about-me {
+  display: inline-block;
+  margin: auto;
+  margin-top: 20%;
+  width: 80%;
+  height: 40vh;
   background-color: white;
-  width: 90%;
-  height: 60vh;
 }
