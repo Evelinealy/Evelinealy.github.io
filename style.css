@@ -5,12 +5,14 @@ Butterfly Pattern
 
 */
 @import url("https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Emilys Candy", cursive;
+  font-family: "Roboto Slab", serif;
+  /* font-family: "Emilys Candy", cursive; */
   scroll-behavior: smooth;
 }
 
@@ -41,6 +43,7 @@ body {
   font-size: 2em;
   text-decoration: none;
   letter-spacing: 2px;
+  font-family: "Emilys Candy", cursive;
 }
 
 #header ul {
@@ -101,6 +104,7 @@ body {
   border-radius: 5px;
   font-size: 1em;
   white-space: normal;
+  font-family: "Emilys Candy", cursive;
 }
 
 #intro > .intro-button:hover {
@@ -118,24 +122,39 @@ body {
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background-color: #ffdff0;
-  background-image: url(images/Chair-Purse.svg);
-  background-size: 20%;
-  background-repeat: no-repeat;
-  background-position: 15% 95%;
 }
 
 #about-me > #left-side {
   width: 50%;
   height: 100%;
-  border: solid red;
+  background-image: url(images/skills.svg);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: 12% 12%;
 }
 #about-me > #right-side {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   padding: 2%;
   width: 50%;
   height: 100%;
+  overflow: auto;
+}
+
+#about-me p {
+  font-size: 90%;
+}
+
+#projects {
+  position: relative;
+  display: flex;
+  margin: auto;
+  margin-top: 10%;
+  width: 80%;
+  height: 80vh;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: white;
 }
 
 footer {
