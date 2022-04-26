@@ -127,10 +127,10 @@ body {
 #about-me > #left-side {
   width: 50%;
   height: 100%;
-  background-image: url(images/skills.svg);
-  background-size: 90%;
+  background-image: url(images/skillset.svg);
+  background-size: 80%;
   background-repeat: no-repeat;
-  background-position: 12% 12%;
+  background-position: center;
 }
 #about-me > #right-side {
   display: flex;
@@ -147,7 +147,8 @@ body {
 
 #projects {
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template: 30% 30% 30% / 30% 30% 30%;
   margin: auto;
   margin-top: 10%;
   width: 80%;
