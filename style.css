@@ -148,7 +148,7 @@ body {
 #projects {
   position: relative;
   display: inline-grid;
-  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  grid-template: 0.2 repeat(2, 1fr) / 0.2 repeat(2, 1fr);
   justify-items: center;
   margin: auto;
   margin-top: 10%;
@@ -157,6 +157,11 @@ body {
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background-color: white;
+}
+
+#projects h2 {
+  grid-column: 1 / 4;
+  margin-top: 2%;
 }
 
 footer {
