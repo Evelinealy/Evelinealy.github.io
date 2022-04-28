@@ -147,8 +147,9 @@ body {
 
 #projects {
   position: relative;
-  display: grid;
-  grid-template: 30% 30% 30% / 30% 30% 30%;
+  display: inline-grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  justify-items: center;
   margin: auto;
   margin-top: 10%;
   width: 80%;
