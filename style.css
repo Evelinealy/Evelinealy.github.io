@@ -164,6 +164,28 @@ body {
   margin-top: 2%;
 }
 
+#contact-me {
+  position: relative;
+  display: grid;
+  margin: auto;
+  margin-top: 10%;
+  width: 80%;
+  height: 60vh;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #ffdff0;
+  grid-template-rows: 1fr 2fr;
+}
+
+.form-container {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  margin-left: 5%;
+}
+
+.contact-info {
+}
+
 footer {
   display: flex;
   height: 5vh;
