@@ -1,6 +1,4 @@
-/* Design Idea:
-
-Butterfly Pattern
+/* Tutorial for popup: https://www.youtube.com/watch?v=MBaw_6cPmAw
 
 
 */
@@ -163,34 +161,13 @@ body {
   grid-column: 1 / 4;
   margin-top: 2%;
 }
-
-/* #contact-me {
-  position: relative;
-  display: grid;
-  margin: auto;
-  margin-top: 10%;
-  width: 80%;
-  height: 60vh;
-  border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  background-color: #ffdff0;
-  grid-template-rows: 1fr 2fr;
-} */
-
-/* .form-container {
-  display: grid;
-  grid-template-rows: 1fr 2fr 1fr;
-  margin-left: 5%;
-} */
-
 .contact-me {
   position: relative;
-  max-width: 500px;
-  padding: 20px 12px 10px 20px;
-  font: 13px Arial, Helvetica, sans-serif;
+  width: 80%;
+  padding: 2% 1% 4% 2%;
+  font-size: 1em;
   margin: auto;
   margin-top: 10%;
-  width: 80%;
   height: 60vh;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -201,26 +178,26 @@ body {
   font-weight: bold;
   font-style: italic;
   border-bottom: 2px solid #ddd;
-  margin-bottom: 20px;
-  font-size: 15px;
-  padding-bottom: 3px;
+  margin-bottom: 2%;
+  font-size: 0.9em;
+  padding-bottom: 0.5%;
 }
 .contact-me label {
   display: block;
-  margin: 0px 0px 15px 0px;
+  margin: 0% 0% 15px 2%;
 }
 .contact-me label > span {
-  width: 100px;
+  width: 10%;
   font-weight: bold;
   float: left;
-  padding-top: 8px;
-  padding-right: 5px;
+  padding-top: 1%;
+  padding-right: 0.5%;
 }
 .contact-me span.required {
   color: red;
 }
 .contact-me .tel-number-field {
-  width: 40px;
+  width: 5%;
   text-align: center;
 }
 .contact-me input.input-field,
@@ -241,23 +218,23 @@ body {
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  padding: 7px;
+  padding: 0.5%;
   outline: none;
 }
 .contact-me .input-field:focus,
 .contact-me .tel-number-field:focus,
 .contact-me .textarea-field:focus,
 .contact-me .select-field:focus {
-  border: 1px solid #0c0;
+  border: 1px solid #fd6eba;
 }
 .contact-me .textarea-field {
-  height: 100px;
+  height: 100%;
   width: 55%;
 }
 .contact-me input[type="submit"],
 .contact-me input[type="button"] {
   border: none;
-  padding: 8px 15px 8px 15px;
+  padding: 1% 2% 1% 2%;
   background: #faa1d0;
   color: #fff;
   box-shadow: 1px 1px 4px #dadada;
