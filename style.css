@@ -1,7 +1,3 @@
-/* Tutorial for popup: https://www.youtube.com/watch?v=MBaw_6cPmAw
-
-
-*/
 @import url("https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500&display=swap");
 
@@ -161,7 +157,7 @@ body {
   grid-column: 1 / 4;
   margin-top: 2%;
 }
-.contact-me {
+#contact-me {
   position: relative;
   width: 80%;
   padding: 2% 1% 4% 2%;
@@ -182,32 +178,32 @@ body {
   font-size: 0.9em;
   padding-bottom: 0.5%;
 }
-.contact-me label {
+#contact-me label {
   display: block;
   margin: 0% 0% 15px 2%;
 }
-.contact-me label > span {
+#contact-me label > span {
   width: 10%;
   font-weight: bold;
   float: left;
   padding-top: 1%;
   padding-right: 0.5%;
 }
-.contact-me span.required {
+#contact-me span.required {
   color: red;
 }
-.contact-me .tel-number-field {
+#contact-me .tel-number-field {
   width: 5%;
   text-align: center;
 }
-.contact-me input.input-field,
-.contact-me .select-field {
+#contact-me input.input-field,
+#contact-me .select-field {
   width: 48%;
 }
-.contact-me input.input-field,
-.contact-me .tel-number-field,
-.contact-me .textarea-field,
-.contact-me .select-field {
+#contact-me input.input-field,
+#contact-me .tel-number-field,
+#contact-me .textarea-field,
+#contact-me .select-field {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -221,18 +217,18 @@ body {
   padding: 0.5%;
   outline: none;
 }
-.contact-me .input-field:focus,
-.contact-me .tel-number-field:focus,
-.contact-me .textarea-field:focus,
-.contact-me .select-field:focus {
+#contact-me .input-field:focus,
+#contact-me .tel-number-field:focus,
+#contact-me .textarea-field:focus,
+#contact-me .select-field:focus {
   border: 1px solid #fd6eba;
 }
-.contact-me .textarea-field {
+#contact-me .textarea-field {
   height: 100%;
   width: 55%;
 }
-.contact-me input[type="submit"],
-.contact-me input[type="button"] {
+#contact-me input[type="submit"],
+#contact-me input[type="button"] {
   border: none;
   padding: 1% 2% 1% 2%;
   background: #faa1d0;
@@ -244,8 +240,8 @@ body {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
 }
-.contact-me input[type="submit"]:hover,
-.contact-me input[type="button"]:hover {
+#contact-me input[type="submit"]:hover,
+#contact-me input[type="button"]:hover {
   background: #fd6eba;
   color: #fff;
 }
@@ -261,4 +257,65 @@ footer {
 
 footer > p {
   display: block;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid #fd6eba;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: #ffdff0;
+  width: 500px;
+  max-width: 80%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 2% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fd6eba;
+}
+
+.modal-header .attributes-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fd6eba;
+}
+
+.modal-body {
+  padding: 2% 5%;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
