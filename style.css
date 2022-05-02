@@ -157,6 +157,12 @@ body {
   grid-column: 1 / 4;
   margin-top: 2%;
 }
+
+#projects input {
+  width: 70%;
+  height: 70%;
+}
+
 #contact-me {
   position: relative;
   width: 80%;
@@ -244,6 +250,7 @@ body {
 #contact-me input[type="button"]:hover {
   background: #fd6eba;
   color: #fff;
+  cursor: pointer;
 }
 
 footer {
@@ -253,6 +260,11 @@ footer {
   align-items: center;
   padding-top: 1vh;
   margin-top: 10vh;
+}
+
+footer a {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 footer > p {
@@ -319,3 +331,17 @@ footer > p {
   opacity: 1;
   pointer-events: all;
 }
+
+/* #modalcalc {
+  width: 80%;
+  height: 90%;
+} */
+
+/* #modalcalc .modal-body {
+  color: red;
+} */
+
+/* #calc-image img {
+  height: 70%;
+  width: 70%;
+} */
