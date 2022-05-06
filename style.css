@@ -172,7 +172,35 @@ body {
   padding: 2%;
 }
 
-.cimage {
+#calc-image img {
+  width: 100%;
+}
+
+#studentlist-image {
+  width: 100%;
+  height: 100%;
+}
+
+#studentlist-description {
+  padding: 2%;
+}
+
+#studentlist-image img {
+  width: 100%;
+}
+
+#modalpackageapp-image {
+  width: 100%;
+  height: 100%;
+}
+
+#modalpackageapp-description {
+  padding: 2%;
+}
+
+#modalpackageapp-image img {
+  width: 100%;
+  height: 200px;
 }
 
 #contact-me {
