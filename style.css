@@ -371,6 +371,10 @@ footer > p {
   display: flex;
 }
 
+#footer-body {
+  flex-direction: column;
+}
+
 #overlay {
   position: fixed;
   opacity: 0;
