@@ -401,9 +401,10 @@ footer > p {
 }
 
 .modal-body {
-  height: 90%;
+  height: 70%;
   padding: 2% 5%;
   display: flex;
+  overflow: auto;
 }
 
 #footer-body {
