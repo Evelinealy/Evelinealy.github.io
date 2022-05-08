@@ -42,13 +42,17 @@ btn.addEventListener("click", function (e) {
   const email = document.getElementById("email").value;
   const msg = document.getElementById("message").value;
   const body =
-    "name: " + name + "<br/> email: " + email + "<br/> message: " + msg;
+    "Name: " + name + "<br/> Email: " + email + "<br/> Message: " + msg;
 
   Email.send({
     SecureToken: "ef850069-2ab9-4747-8186-50daadaea980",
     To: "alyga.careers@gmail.com",
     From: email,
-    Subject: "This is the subject",
-    Body: "And this is the body",
-  }).then((message) => alert(message));
+    Subject: "Contact Inquiry",
+    Body: body,
+  }).then((message) =>
+    alert(
+      "Thank you for your inquiry! The message was sent successfully. I will reach out to you soon!"
+    )
+  );
 });
