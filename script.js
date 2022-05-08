@@ -34,3 +34,21 @@ function closeModal(modal) {
   modal.classList.remove("active");
   overlay.classList.remove("active");
 }
+
+const btn = document.getElementById("btn-submit");
+btn.addEventListener("click", function (e) {
+  e.preventDefault();
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const msg = document.getElementById("message").value;
+  const body =
+    "name: " + name + "<br/> email: " + email + "<br/> message: " + msg;
+
+  Email.send({
+    SecureToken: "ef850069-2ab9-4747-8186-50daadaea980",
+    To: "alyga.careers@gmail.com",
+    From: email,
+    Subject: "This is the subject",
+    Body: "And this is the body",
+  }).then((message) => alert(message));
+});
