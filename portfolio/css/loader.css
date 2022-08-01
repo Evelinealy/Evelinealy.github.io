@@ -1,0 +1,50 @@
+/* CSS STYLING FOR LOADER */
+
+.loader {
+  position: relative;
+  /* background-color: #fbcfdc; */
+  z-index: 99;
+  top: 0;
+  left: 0;
+  height: 40%;
+  width: 40%;
+}
+
+.loader span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(calc(36deg * var(--i)));
+}
+
+.loader span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: transparent;
+  border: 4px solid #ec5e96;
+  box-sizing: border-box;
+  box-shadow: 0 0 20px #ec5e96, -30px -30px 0 #ec5e96, -30px -30px 20px #ec5e96,
+    30px 30px 0 #ec5e96, 30px 30px 20px #ec5e96, 30px -30px 0 #ec5e96,
+    30px -30px 20px #ec5e96, -30px 30px 0 #ec5e96, -30px 30px 20px #ec5e96;
+
+  animation: animate 5s linear infinite;
+  animation-delay: calc(-0.25s * var(--i));
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}

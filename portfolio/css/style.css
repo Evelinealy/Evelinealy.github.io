@@ -1,47 +1,27 @@
-:root {
-  --bg-black-900: #f2f2fc;
-  --bg-black-100: #fdf9ff;
-  --bg-black-50: #e8dfec;
-  --text-black-900: #302e4d;
-  --text-black-700: #504e70;
-}
-
-body {
-  line-height: 1.5;
-  font-size: 16px;
-}
-
+/* CSS RESET */
 * {
   margin: 0;
   padding: 0;
-  outline: none;
-  text-decoration: none;
   box-sizing: border-box;
 }
 
-::before,
-::after {
-  box-sizing: border-box;
+/* BACKGROUND IMAGING */
+body {
+  overflow: hidden;
+  background-image: url("../assets/images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.section {
-  background: var(--bg-black-50);
-  min-height: 100vh;
-  display: block;
-  position: fixed;
-  left: 270px;
-  top: 0;
-  right: 0;
-  opacity: 1;
-}
-
-/* Side bar */
-.aside {
-  width: 270px;
-  background: var(--bg-black-100);
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 100%;
-  z-index: 10;
+.main-content {
+  opacity: 0;
+  display: none;
+  transition: opacity 2s ease-in;
 }
