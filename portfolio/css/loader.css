@@ -28,11 +28,11 @@
   height: 25px;
   border-radius: 50%;
   background: transparent;
-  border: 4px solid #ec5e96;
+  border: 4px solid #c0fcf8;
   box-sizing: border-box;
-  box-shadow: 0 0 20px #ec5e96, -30px -30px 0 #ec5e96, -30px -30px 20px #ec5e96,
-    30px 30px 0 #ec5e96, 30px 30px 20px #ec5e96, 30px -30px 0 #ec5e96,
-    30px -30px 20px #ec5e96, -30px 30px 0 #ec5e96, -30px 30px 20px #ec5e96;
+  box-shadow: 0 0 20px #c0fcf8, -30px -30px 0 #c0fcf8, -30px -30px 20px #c0fcf8,
+    30px 30px 0 #c0fcf8, 30px 30px 20px #c0fcf8, 30px -30px 0 #c0fcf8,
+    30px -30px 20px #c0fcf8, -30px 30px 0 #c0fcf8, -30px 30px 20px #c0fcf8;
 
   animation: animate 5s linear infinite;
   animation-delay: calc(-0.25s * var(--i));
