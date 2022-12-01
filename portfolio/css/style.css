@@ -1,4 +1,4 @@
-/* 2:34:00.*/
+/* 35:00 of part 2*/
 
 /* Text font styles*/
 @import url("https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Poppins:wght@200;300;400;500;600;700&display=swap");
@@ -48,15 +48,45 @@ ul {
   display: block;
   padding: 0 30px;
   opacity: 1;
+  position: fixed;
+  left: 270px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* Transitions the side bar after pushing*/
+  transition: all 0.3 ease;
+}
+
+.section.back-section {
+  z-index: 1;
+}
+
+.section.active {
+  z-index: 2;
+  opacity: 1;
+  animation: slideSection 1s ease;
+}
+
+/* Sliding effect*/
+@keyframes slideSection {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 .hidden {
   display: none !important;
 }
-
+/* 
 .main-content {
   padding-left: 270px;
-}
+} */
 
 .padd-15 {
   padding-left: 15px;
@@ -147,6 +177,8 @@ ul {
   justify-content: center;
   align-items: center;
   z-index: 10;
+  /* Transitions the side bar after pushing*/
+  transition: all 0.3s ease;
 }
 
 .aside .logo {
@@ -205,6 +237,7 @@ ul {
   display: none;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease;
 }
 
 .aside .nav-toggler span {
@@ -664,9 +697,27 @@ h3.my-profession {
   .aside {
     left: -270px;
   }
-  .main-content {
-    padding-left: 0;
+  .aside.open {
+    left: 0;
   }
+  .aside .nav-toggler {
+    display: flex;
+    left: 30px;
+  }
+
+  .aside .nav-toggler.open {
+    left: 300px;
+  }
+
+  .section {
+    left: 0;
+  }
+
+  /* BELOW: Pushes the information to the side instead of covering it */
+  .section.open {
+    left: 270px;
+  }
+  /* ABOVE: Pushes the information to the side instead of covering it*/
   .about .about-content .personal-info .info-item p span {
     display: block;
     margin-left: 0;
