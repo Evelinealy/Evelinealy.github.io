@@ -12,7 +12,8 @@ Online Tutorial's CSS videos: https://www.youtube.com/@OnlineTutorialsYT
 
 The following table shows the features that I wish to implement now or in the future and their status updates.
 
-| Feature          | Status      |
-| ---------------- | ----------- |
-| CSS Loading Spin | In-Progress |
-| Rework Main Page | In-Progress |
+| Feature                               | Status      |
+| ------------------------------------- | ----------- |
+| Edit home information to correct data | In-Progress |
+| Rework Main Page                      | Not Started |
+| CSS Loading Spin                      | Not Started |
