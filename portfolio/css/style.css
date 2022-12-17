@@ -2,8 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 :root {
-  --bg-image: url("/portfolio/images/background-images/crowns.jpg");
+  --bg-image: url("/portfolio/images/background-images/mist.png");
   --bg-black-900: #f2f2fd;
+  --bg-white: #f9f1f0;
   --bg-black-100: #fdf9ff;
   --bg-black-50: #e8dfec;
   --text-black-900: #302e4d;
@@ -14,6 +15,7 @@ body.dark {
   /*Color is #2F4858*/
   --bg-image: url("/portfolio/images/background-images/crowns-dark.jpg");
   --bg-black-900: #151515;
+  --bg-white: #151b25;
   --bg-black-100: #222222;
   --bg-black-50: #393939;
   --text-black-900: #ffffff;
@@ -24,6 +26,7 @@ body {
   line-height: 1.5;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
 }
 
 * {
@@ -43,17 +46,21 @@ ul {
   list-style: none;
 }
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .section {
   /* background: var(--bg-black-900); */
   background-image: var(--bg-image);
   /*Color for image is #fedcdb*/
-  background-color: #fedcdb;
-  background-size: contain;
+  background-size: cover;
   min-height: 100vh;
   display: block;
   padding: 0 30px;
   opacity: 1;
-  position: fixed;
+  /* position: fixed; */
   left: 270px;
   top: 0;
   right: 0;
@@ -168,10 +175,114 @@ ul {
   transform: scale(1.05);
 }
 
+/* ==== Header ==== */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 30px 18%;
+  transition: 0.3s;
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
+header .logo {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+header .logo a {
+  color: var(--text-black-900);
+  font-weight: 700;
+  padding: 15px 20px;
+  font-size: 30px;
+  letter-spacing: 5px;
+  position: relative;
+}
+
+header .logo a span {
+  font-family: "Emilys Candy", cursive;
+  font-size: 40px;
+}
+
+header .logo a::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-bottom: 5px solid var(--skin-color);
+  border-left: 5px solid var(--skin-color);
+  bottom: 0;
+  left: 0;
+}
+
+header .logo a::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-top: 5px solid var(--skin-color);
+  border-right: 5px solid var(--skin-color);
+  top: 0;
+  right: 0;
+}
+
+header .bx .bx-menu {
+  right: 70px;
+}
+
+header.sticky {
+  background-color: #ffffff;
+  padding: 13px 18%;
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list li {
+  position: relative;
+}
+
+.nav-list a {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-black-900);
+  padding: 10px 27px;
+}
+
+.nav-list li a.active {
+  color: var(--skin-color);
+}
+
+.nav-list a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: var(--bg-black-50);
+  bottom: -3px;
+  left: 0;
+  transition: ease 0.4s;
+}
+
+.nav-list a:hover::after {
+  width: 100%;
+}
+
 /* ==== Side Bar ==== */
 .aside {
+  display: none !important;
   width: 270px;
-  background: var(--bg-black-100);
+  /* background: var(--bg-black-100); */
+  /* background: var(--bg-white); */
+  /* Get shades at: https://mdigi.tools/color-shades/#ffafcc*/
+  background-color: #ffafcc;
   position: fixed;
   left: 0;
   top: 0;
@@ -317,8 +428,7 @@ ul {
 .home {
   min-height: 100vh;
   display: flex;
-  /* color: var(--text-black-900); */
-  color: #f2f2fd;
+  color: var(--text-black-900);
 }
 
 .home .home-info {
@@ -350,8 +460,7 @@ h3.my-profession {
 .home-info p {
   margin-bottom: 70px;
   font-size: 20px;
-  /* color: var(--text-black-700); */
-  color: var(--skin-color);
+  color: var(--text-black-900);
   font-weight: 700;
 }
 
@@ -391,7 +500,6 @@ h3.my-profession {
   margin: auto;
   border-radius: 5px;
   height: 400px;
-  width: 70%;
 }
 
 .shadow-dark {
@@ -442,7 +550,7 @@ h3.my-profession {
   padding: 10px 0;
   font-size: 16px;
   color: var(--text-black-900);
-  border-bottom: 1px solid var(--bg-black-50);
+  border-bottom: 1px solid var(--bg-white);
 }
 
 .about .about-content .personal-info .info-item p span {
@@ -480,7 +588,7 @@ h3.my-profession {
 }
 
 .about .about-content .skills .skill-item .progress {
-  background-color: var(--bg-black-50);
+  background-color: var(--bg-white);
   height: 7px;
   border-radius: 4px;
   width: 100%;
@@ -530,7 +638,7 @@ h3.my-profession {
 }
 
 .about .about-content .timeline {
-  background-color: var(--bg-black-100);
+  background-color: var(--bg-white);
   padding: 30px 15px;
   border: 1px solid var(--bg-black-50);
   border-radius: 10px;
@@ -617,7 +725,7 @@ h3.my-profession {
 }
 
 .portfolio .portfolio-item-inner {
-  border: 6px solid var(--bg-black-100);
+  border: 6px solid var(--bg-white);
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
@@ -696,7 +804,7 @@ h3.my-profession {
   width: 100%;
   height: 50px;
   border-radius: 25px;
-  background: var(--bg-black-100);
+  background: var(--bg-white);
   border: 1px solid var(--bg-black-50);
   padding: 10px 25px;
   font-size: 16px;
@@ -715,6 +823,17 @@ h3.my-profession {
 .contact .contact-form .btn {
   height: 50px;
   padding: 0 50px;
+}
+
+@media (max-width: 1425px) {
+  header {
+    padding: 16px 3%;
+    transition: 0.3s;
+  }
+  header.sticky {
+    padding: 10px 3%;
+    transition: 0.3s;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -752,7 +871,47 @@ h3.my-profession {
 }
 
 @media (max-width: 991px) {
-  .contact .contact-info-item,
+  #menu-icon.s-icon {
+    display: block !important;
+  }
+
+  .home {
+    min-height: 80vh;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: -600px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: bisque;
+    text-align: right;
+    transition: all 0.4s;
+  }
+
+  .nav-list a {
+    display: block;
+    padding: 1.2rem;
+    margin: 1.5rem;
+    border-right: 2px solid black;
+    color: black;
+  }
+
+  .nav-list a::after {
+    background: none;
+    display: none;
+  }
+
+  .nav-list a:hover {
+    background: white;
+  }
+
+  .nav-list.active {
+    top: 100%;
+  }
+
+  .home .contact .contact-info-item,
   .portfolio .portfolio-item {
     flex: 0 0 100%;
     max-width: 100%;

@@ -32,16 +32,35 @@
   border-radius: 50%;
 }
 
+.style-switcher .navi-icons a {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-black-900);
+}
+
+.style-switcher .navi-icons a.active {
+  color: var(--skin-color);
+}
+
+#menu-icon.s-icon {
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+
 .style-switcher .s-icon i {
   line-height: 40px;
 }
+.style-switcher #menu-icon {
+  top: 30px;
+}
 
 .style-switcher .style-switcher-toggler {
-  top: 0;
+  top: 75px;
 }
 
 .style-switcher .day-night {
-  top: 55px;
+  top: 120px;
 }
 
 .style-switcher h4 {
@@ -66,21 +85,21 @@
 }
 
 .style-switcher .color-1 {
-  background-color: #ec1839;
+  background-color: #fb837f;
 }
 
 .style-switcher .color-2 {
-  background-color: #fa5b0f;
+  background-color: #ce9bfc;
 }
 
 .style-switcher .color-3 {
-  background-color: #37b182;
+  background-color: #98d5b5;
 }
 
 .style-switcher .color-4 {
-  background-color: #1854b4;
+  background-color: #89b3bb;
 }
 
 .style-switcher .color-5 {
-  background-color: #f021b2;
+  background-color: #d78508;
 }

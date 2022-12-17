@@ -40,3 +40,15 @@ window.addEventListener("load", () => {
     dayNight.querySelector("i").classList.add("fa-moon");
   }
 });
+
+// ==== Menu Activation ====
+
+const menu = document.getElementById("menu-icon");
+const navigatorList = document.querySelector(".nav-list");
+
+menu.addEventListener("click", () => {
+  console.log("hi");
+  document.querySelector(".style-switcher").classList.toggle("open");
+});
+
+menu.onclick = () => {};

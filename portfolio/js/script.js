@@ -88,3 +88,10 @@ function asideSectionTogglerBtn() {
     allSection[i].classList.toggle("open");
   }
 }
+
+// ==== Sticky for Header ====
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", function () {
+  header.classList.toggle("sticky", window.scrollY > 0);
+});
