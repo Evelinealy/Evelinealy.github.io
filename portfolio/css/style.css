@@ -718,11 +718,22 @@ h3.my-profession {
   font-weight: 500;
 }
 
-.portfolio .portfolio-item {
+.portfolio .portfolio-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  overflow: hidden;
+  position: relative;
+}
+/* .portfolio .portfolio-item {
+  position: relative;
   flex: 0 0 33.33%;
   max-width: 33.33%;
   margin-bottom: 30px;
-}
+} */
 
 .portfolio .portfolio-item-inner {
   border: 6px solid var(--bg-white);
@@ -730,10 +741,71 @@ h3.my-profession {
   overflow: hidden;
   cursor: pointer;
 }
-
-.portfolio .portfolio-item-inner .portfolio-img img {
-  width: 100%;
+/* 
+.portfolio .portfolio-item-inner img {
+  max-width: 100%;
+  width: 550px;
+  height: auto;
   display: block;
+} */
+
+.portfolio .portfolio-work {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.portfolio .portfolio-work img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.portfolio .portfolio-work .layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, #191919);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.7s;
+}
+.portfolio .portfolio-work .layer h3 {
+  font-weight: 50px;
+  margin-bottom: 20px;
+}
+
+.portfolio .portfolio-work .layer a {
+  margin-top: 20px;
+  color: var(--skin-color);
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 40px;
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.portfolio .portfolio-work:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio .portfolio-work:hover .layer {
+  height: 100%;
 }
 
 /* ==== Contact Section ==== */
@@ -825,6 +897,21 @@ h3.my-profession {
   padding: 0 50px;
 }
 
+/* ==== MESSAGE SENT BOX ==== */
+#msg {
+  color: green;
+  margin-top: -20px;
+  display: block;
+}
+
+/* ==== All Screen Adjustments ====*/
+
+@media (max-width: 2000px) {
+  .navi-switcher {
+    display: none;
+  }
+}
+
 @media (max-width: 1425px) {
   header {
     padding: 16px 3%;
@@ -871,6 +958,10 @@ h3.my-profession {
 }
 
 @media (max-width: 991px) {
+  .navi-switcher {
+    display: block;
+  }
+
   #menu-icon.s-icon {
     display: block !important;
   }
