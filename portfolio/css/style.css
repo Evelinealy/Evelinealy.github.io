@@ -737,6 +737,8 @@ h3.my-profession {
 
 .portfolio .portfolio-item-inner {
   border: 6px solid var(--bg-white);
+  /* height: 230px; */
+  height: 90%;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
@@ -756,6 +758,7 @@ h3.my-profession {
 }
 .portfolio .portfolio-work img {
   width: 100%;
+  height: 100%;
   border-radius: 10px;
   display: block;
   transition: transform 0.5s;
