@@ -485,7 +485,7 @@
             <!-- ==== Contact Form ==== -->
             <div class="row">
               <div class="contact-form padd-15">
-                <form name="submit-to-google-sheet">
+                <form name="submit-to-email" class="gform" method="POST" data-email="alyga.careers@gmail.com" action="https://script.google.com/macros/s/AKfycbzFgX7jzWCsdRPsBd71GR370nSbIUwUfCQP2Sn1GMsH0Qth2fDpOUhGZEYwmjKkQlZY/exec">
                   <div class="row">
                     <div class="form-item col-6 padd-15">
                       <div class="form-group">
@@ -591,7 +591,7 @@
     <script src="js/style-switcher.js"></script>
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbwEJDcJU2d3a7poaXqzoNOUW5xvmv0kWwSjqm9y4WpaXOjkB_nmcYsWXm3qL2RWxoKr/exec'
-      const form = document.forms['submit-to-google-sheet']
+      const form = document.forms['submit-to-email']
       const message = document.getElementById("msg")
     
       form.addEventListener('submit', e => {
@@ -607,5 +607,6 @@
           .catch(error => console.error('Error!', error.message))
       })
     </script>
+    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
   </body>
 </html>

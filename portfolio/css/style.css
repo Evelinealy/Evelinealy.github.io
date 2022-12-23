@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 :root {
-  --bg-image: url("/portfolio/images/background-images/mist.png");
+  --bg-image: url("/portfolio/images/background-images/light.svg");
   --bg-black-900: #f2f2fd;
   --bg-white: #f9f1f0;
   --bg-black-100: #fdf9ff;
@@ -13,7 +13,7 @@
 
 body.dark {
   /*Color is #2F4858*/
-  --bg-image: url("/portfolio/images/background-images/crowns-dark.jpg");
+  --bg-image: url("/portfolio/images/background-images/dark1.jpg");
   --bg-black-900: #151515;
   --bg-white: #151b25;
   --bg-black-100: #222222;
@@ -23,6 +23,11 @@ body.dark {
 }
 
 body {
+  background-image: var(--bg-image);
+  mix-blend-mode: normal;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   line-height: 1.5;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
@@ -53,7 +58,7 @@ ul {
 
 .section {
   /* background: var(--bg-black-900); */
-  background-image: var(--bg-image);
+  /* background-image: var(--bg-image); */
   /*Color for image is #fedcdb*/
   background-size: cover;
   min-height: 100vh;
@@ -901,7 +906,8 @@ h3.my-profession {
 }
 
 /* ==== MESSAGE SENT BOX ==== */
-#msg {
+#msg,
+.thankyou_message {
   color: green;
   margin-top: -20px;
   display: block;
