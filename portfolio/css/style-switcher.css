@@ -3,9 +3,9 @@
   right: 0;
   top: 60px;
   padding: 15px;
-  width: 200px;
+  width: 170px;
   border: 1px solid var(--bg-black-50);
-  background: var(--bg-black-100);
+  background: var(--background-color);
   z-index: 1001;
   border-radius: 5px;
   transition: all 0.3s ease;
@@ -22,7 +22,7 @@
   width: 40px;
   text-align: center;
   font-size: 20px;
-  background: var(--bg-black-100);
+  background: var(--background-color);
   color: var(--text-black-900);
   right: 100%;
   border: 1px solid var(--bg-black-50);
@@ -85,7 +85,7 @@
 }
 
 .style-switcher .color-1 {
-  background-color: #fb837f;
+  background-color: #ef6994;
 }
 
 .style-switcher .color-2 {
@@ -93,13 +93,9 @@
 }
 
 .style-switcher .color-3 {
-  background-color: #98d5b5;
+  background-color: #98d1a2;
 }
 
 .style-switcher .color-4 {
-  background-color: #89b3bb;
-}
-
-.style-switcher .color-5 {
-  background-color: #d78508;
+  background-color: #9bccd5;
 }

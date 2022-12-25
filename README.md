@@ -12,18 +12,26 @@ and
 
 Web Decoded's React Tutorial: https://www.youtube.com/watch?v=hYv6BM2fWd8
 
+and
+
+Easy Tutorial's video: https://www.youtube.com/@EasyTutorialsVideo
+
 Background images used under free liscense from https://vecteezy.com.
+Portfolio computer screen images used under free liscense from https://unsplash.com/@quaritsch.
 
 ### Feature Updates
 
 The following table shows the features that I wish to implement now or in the future and their status updates.
 
-| Feature                        | Status      |
-| ------------------------------ | ----------- |
-| Change text colors             | In-Progress |
-| Change text style              | In-Progress |
-| Change sidebar colors          | In-Progress |
-| Add image to side of main page | In-Progress |
-| Add logo to top of sidebar     | In-Progress |
-| Rework Main Page               | Not Started |
-| CSS Loading Spin               | Not Started |
+| Feature                              | Status      |
+| ------------------------------------ | ----------- |
+| Change aside to header               | Completed   |
+| Add popup to projects                | Completed   |
+| Add a way to connect to contact page | Completed   |
+| Change text colors                   | In-Progress |
+| Change text style                    | In-Progress |
+| Change sidebar colors                | In-Progress |
+| Add image to side of main page       | In-Progress |
+| Add logo to top of sidebar           | In-Progress |
+| Rework Main Page                     | Not Started |
+| CSS Loading Spin                     | Not Started |

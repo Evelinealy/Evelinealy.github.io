@@ -1,5 +1,6 @@
 /* Text font styles*/
 @import url("https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 
 :root {
   --bg-image: url("/portfolio/images/background-images/light.svg");
@@ -7,8 +8,11 @@
   --bg-white: #f9f1f0;
   --bg-black-100: #fdf9ff;
   --bg-black-50: #e8dfec;
-  --text-black-900: #302e4d;
-  --text-black-700: #504e70;
+  /* --text-black-900: #302e4d; */
+  --text-black-900: #413f3f;
+  /* --text-black-700: #504e70; */
+  --text-black-700: #6f6b6c;
+  --background-color: #fcfcf5;
 }
 
 body.dark {
@@ -19,7 +23,8 @@ body.dark {
   --bg-black-100: #222222;
   --bg-black-50: #393939;
   --text-black-900: #ffffff;
-  --text-black-700: #e9e9e9;
+  --text-black-700: #f9f9fa;
+  --background-color: #3f3e4b;
 }
 
 body {
@@ -241,7 +246,7 @@ header .bx .bx-menu {
 }
 
 header.sticky {
-  background-color: #ffffff;
+  background-color: var(--background-color);
   padding: 13px 18%;
   box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
 }
@@ -280,155 +285,6 @@ header.sticky {
   width: 100%;
 }
 
-/* ==== Side Bar ==== */
-.aside {
-  display: none !important;
-  width: 270px;
-  /* background: var(--bg-black-100); */
-  /* background: var(--bg-white); */
-  /* Get shades at: https://mdigi.tools/color-shades/#ffafcc*/
-  background-color: #ffafcc;
-  position: fixed;
-  left: 0;
-  top: 0;
-  padding: 30px;
-  height: 100%;
-  border-right: 1px solid var(--bg-black-50);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-  /* Transitions the side bar after pushing*/
-  /* transition: all 0.3s ease; */
-}
-
-.aside .logo {
-  position: absolute;
-  top: 50px;
-  font-size: 30px;
-  text-transform: capitalize;
-}
-
-.aside .logo a {
-  color: var(--text-black-900);
-  font-weight: 700;
-  padding: 15px 20px;
-  font-size: 30px;
-  letter-spacing: 5px;
-  position: relative;
-}
-
-.aside .logo a span {
-  font-family: "Emilys Candy", cursive;
-  font-size: 40px;
-}
-
-.aside .logo a::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-bottom: 5px solid var(--skin-color);
-  border-left: 5px solid var(--skin-color);
-  bottom: 0;
-  left: 0;
-}
-
-.aside .logo a::after {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-top: 5px solid var(--skin-color);
-  border-right: 5px solid var(--skin-color);
-  top: 0;
-  right: 0;
-}
-
-.aside .nav-toggler {
-  height: 40px;
-  width: 45px;
-  border: 1px solid var(--bg-black-50);
-  cursor: pointer;
-  position: fixed;
-  left: 300px;
-  top: 20px;
-  border-radius: 5px;
-  background: var(--bg-black-100);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-}
-
-.aside .nav-toggler span {
-  height: 2px;
-  width: 18px;
-  background: var(--skin-color);
-  display: inline-block;
-  position: relative;
-}
-
-.aside .nav-toggler.open span {
-  background-color: transparent;
-}
-
-.aside .nav-toggler span::before {
-  content: "";
-  height: 1.5px;
-  width: 18px;
-  background: var(--skin-color);
-  position: absolute;
-  top: -6px;
-  left: 0;
-}
-
-.aside .nav-toggler.open span::before {
-  transform: rotate(45deg);
-  top: 0;
-}
-
-.aside .nav-toggler span::after {
-  content: "";
-  height: 2px;
-  width: 18px;
-  background: var(--skin-color);
-  position: absolute;
-  top: 6px;
-  left: 0;
-}
-
-.aside .nav-toggler.open span::after {
-  transform: rotate(-45deg);
-  top: 0;
-}
-
-.aside .nav {
-  margin-top: 50px;
-}
-
-.aside .nav li {
-  margin-bottom: 20px;
-  display: block;
-}
-
-.aside .nav li a {
-  font-size: 16px;
-  font-weight: 600;
-  display: block;
-  border-bottom: 1px solid var(--bg-black-50);
-  color: var(--text-black-900);
-  padding: 5px 15px;
-}
-
-.aside .nav li a.active {
-  color: var(--skin-color);
-}
-
-.aside .nav li a i {
-  margin-right: 15px;
-}
-
 /* === Home === */
 .home {
   min-height: 100vh;
@@ -442,6 +298,7 @@ header.sticky {
 }
 
 h3.hello {
+  top: -30px;
   font-size: 28px;
   margin: 15px 0;
 }
@@ -536,7 +393,7 @@ h3.my-profession {
 .about .about-content .about-text p {
   font-size: 16px;
   line-height: 25px;
-  color: var(--text-black-700);
+  color: var(--text-black-900);
 }
 
 .about .about-content .personal-info {
@@ -555,7 +412,7 @@ h3.my-profession {
   padding: 10px 0;
   font-size: 16px;
   color: var(--text-black-900);
-  border-bottom: 1px solid var(--bg-white);
+  border-bottom: 1px solid var(--background-color);
 }
 
 .about .about-content .personal-info .info-item p span {
@@ -593,7 +450,7 @@ h3.my-profession {
 }
 
 .about .about-content .skills .skill-item .progress {
-  background-color: var(--bg-white);
+  background-color: var(--background-color);
   height: 7px;
   border-radius: 4px;
   width: 100%;
@@ -643,7 +500,7 @@ h3.my-profession {
 }
 
 .about .about-content .timeline {
-  background-color: var(--bg-white);
+  background-color: var(--background-color);
   padding: 30px 15px;
   border: 1px solid var(--bg-black-50);
   border-radius: 10px;
@@ -741,7 +598,7 @@ h3.my-profession {
 } */
 
 .portfolio .portfolio-item-inner {
-  border: 6px solid var(--bg-white);
+  border: 6px solid var(--background-color);
   /* height: 230px; */
   height: 90%;
   border-radius: 10px;
@@ -884,7 +741,7 @@ h3.my-profession {
   width: 100%;
   height: 50px;
   border-radius: 25px;
-  background: var(--bg-white);
+  background: var(--background-color);
   border: 1px solid var(--bg-black-50);
   padding: 10px 25px;
   font-size: 16px;
