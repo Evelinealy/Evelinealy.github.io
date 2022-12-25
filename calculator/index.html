@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">Calculator</div>
+      <div class="center">
+        <div class="calculator">
+          <div class="calc-screen">
+            <div class="numbers-display"></div>
+            <div class="solutions-display"></div>
+          </div>
+          <div class="buttons1">
+            <button
+              class="one"
+              id="num"
+              value="1"
+              onclick="getNums(this.value)"
+            >
+              1
+            </button>
+            <button
+              class="two"
+              id="num"
+              value="2"
+              onclick="getNums(this.value)"
+            >
+              2
+            </button>
+            <button
+              class="three"
+              id="num"
+              value="3"
+              onclick="getNums(this.value)"
+            >
+              3
+            </button>
+            <button
+              class="plus"
+              id="operator"
+              value="+"
+              onclick="getOperator(this.value)"
+            >
+              +
+            </button>
+          </div>
+          <div class="buttons2">
+            <button
+              class="four"
+              id="num"
+              value="4"
+              onclick="getNums(this.value)"
+            >
+              4
+            </button>
+            <button
+              class="five"
+              id="num"
+              value="5"
+              onclick="getNums(this.value)"
+            >
+              5
+            </button>
+            <button
+              class="six"
+              id="num"
+              value="6"
+              onclick="getNums(this.value)"
+            >
+              6
+            </button>
+            <button
+              class="minus"
+              id="operator"
+              value="-"
+              onclick="getOperator(this.value)"
+            >
+              -
+            </button>
+          </div>
+          <div class="buttons3">
+            <button
+              class="seven"
+              id="num"
+              value="7"
+              onclick="getNums(this.value)"
+            >
+              7
+            </button>
+            <button
+              class="eight"
+              id="num"
+              value="8"
+              onclick="getNums(this.value)"
+            >
+              8
+            </button>
+            <button
+              class="nine"
+              id="num"
+              value="9"
+              onclick="getNums(this.value)"
+            >
+              9
+            </button>
+            <button
+              class="star"
+              id="operator"
+              value="*"
+              onclick="getOperator(this.value)"
+            >
+              *
+            </button>
+          </div>
+          <div class="buttons4">
+            <button class="clear" id="special">C</button>
+            <button
+              class="zero"
+              id="num"
+              value="0"
+              onclick="getNums(this.value)"
+            >
+              0
+            </button>
+            <button class="enter" id="special">=</button>
+            <button
+              class="slash"
+              id="operator"
+              value="/"
+              onclick="getOperator(this.value)"
+            >
+              /
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="footer"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

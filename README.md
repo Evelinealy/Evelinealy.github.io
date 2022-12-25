@@ -28,10 +28,9 @@ The following table shows the features that I wish to implement now or in the fu
 | Change aside to header               | Completed   |
 | Add popup to projects                | Completed   |
 | Add a way to connect to contact page | Completed   |
-| Change text colors                   | In-Progress |
-| Change text style                    | In-Progress |
-| Change sidebar colors                | In-Progress |
-| Add image to side of main page       | In-Progress |
+| Change text colors                   | Completed   |
+| Change text style                    | Completed   |
+| Add image to side of main page       | Not Started |
 | Add logo to top of sidebar           | In-Progress |
-| Rework Main Page                     | Not Started |
+| Rework Main Page                     | Completed   |
 | CSS Loading Spin                     | Not Started |
