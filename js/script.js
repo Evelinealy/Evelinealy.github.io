@@ -1,8 +1,8 @@
 // ==== Typing Animation ====
 var typed = new Typed(".typing", {
   strings: [
-    "Software Developer",
-    "Full-Stack Developer",
+    "Software Enthusiast",
+    "Cybersecurity Enthusiast",
     "Computer Science Major",
   ],
   typeSpeed: 100,
